@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300;400;500;600;700;800;900&display=swap');
+
+input,
+textarea {
+    outline: none;
+}
+
+input:active,
+textarea:active {
+    outline: none;
+}
+
+:focus {
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Merienda', cursive;
+}
+
+.container {
+    width: 98%;
+    margin: 0px auto;
+
+    header {
+
+        width: 100%;
+        height: 250px;
+        background-image: url(../public/img/head_pic.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        padding: 30px 160px;
+
+        nav {
+            width: 370px;
+            display: flex;
+            justify-content: space-between;
+            margin: 17px 0;
+
+            a {
+                color: #fff;
+                font-weight: 400;
+                transition: .2s;
+                font-size: 15px;
+
+                &:hover {
+                    color: #b494ff;
+                }
+            }
+        }
+
+        .img {
+            width: 35px;
+            height: 35px;
+            background-image: url(../public/img/coffee-beans.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        h1 {
+
+            font-size: 40px;
+            font-weight: 700;
+            color: #fff;
+            margin: 100px 70px;
+        }
+    }
+
+    main {
+        width: 100%;
+        height: 100%;
+        margin: 50px 0;
+
+
+        .descriptin {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .img {
+                width: 450px;
+                height: 350px;
+                background-image: url(../public/img/girl.jpg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+            }
+
+            .texts {
+                width: 400px;
+                display: flex;
+                align-self: center;
+                justify-content: center;
+                flex-direction: column;
+                text-align: center;
+
+                .bean_icon {
+                    width: 180px;
+                    height: 40px;
+                    background-image: url(../public/img/beans_logo.svg);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: contain;
+                    display: flex;
+                    align-self: center;
+                    justify-content: center;
+                    margin: 20px 0 30px;
+                }
+
+                span {
+                    font-size: 26px;
+                    color: #000;
+                    font-weight: 400;
+                }
+
+                p {
+                    line-height: 20px;
+                }
+
+            }
+        }
+
+        .looking_for {
+            max-width: 1200px;
+            min-width: 800px;
+            width: 60%;
+            height: 100%;
+            margin: 60px auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .left {
+                form {
+                    display: flex;
+
+                    p {
+                        font-size: 14px;
+                        font-weight: 400;
+
+                    }
+
+                    input {
+                        width: 170px;
+                        height: 30px;
+                        border: none;
+                        text-align: center;
+                        font-size: 14px;
+                        font-weight: 400;
+                        margin-left: 20px;
+                        box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+                    }
+                }
+            }
+
+            .right {
+
+                display: flex;
+                align-items: center;
+
+                p {
+                    font-weight: 400;
+                    font-size: 14px;
+                    margin-right: 30px;
+                }
+
+                button {
+                    height: 30px;
+                    padding: 0 20px;
+                    font-weight: 400;
+                    font-size: 12px;
+                    border: none;
+                    background-color: #fff;
+                    margin-left: 5px;
+                    transition: .2s;
+                    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+
+                    &:hover {
+                        color: #b494ff;
+                        box-shadow: 4px 4px 20px #b494ff;
+                    }
+                }
+            }
+        }
+
+        .cards {
+            width: 800px;
+            height: 100%;
+            margin:     0px auto;
+            text-align: end;
+            display: flex;
+            flex-wrap: wrap;
+
+
+            .card {
+                width: 220px;
+                height: 270px;
+                box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+                padding: 37px 27px 0;
+                border-radius: 10px;
+                margin-right: 30px;
+                margin-top: 60px;
+
+                .card_img {
+                    height: 110px;
+                    width: 160;
+                    background-image: url(../public/img/coffee.png);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-position: center;
+                }
+
+                span {
+                    font-size: 12px;
+                    font-weight: 400;
+                }
+
+                p {
+                    font-weight: 400;
+                    font-size: 14px;
+                    margin-top: 10px;
+                }
+            }
+        }
+
+    }
+
+    footer{
+        width: 100%;
+        height: 100px; 
+        display: flex; 
+        justify-content: center ;
+
+        nav {
+            width: 370px;
+            display: flex;
+            justify-content: space-between;
+            margin: 17px 0;
+
+            a {
+                color: #000;
+                font-weight: 400;
+                transition: .2s;
+                font-size: 15px;
+
+                &:hover {
+                    color: #b494ff;
+                }
+            }
+        }
+
+        .img {
+            width: 35px;
+            height: 35px;
+            background-image: url(../public/img/coffee-beanss.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+       
+    }
+}
+
